@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #161925;
+}
+
+body {
+    background-color: #1098F7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+
+    .container {
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+    
+    @media screen and (max-width: 480px) {
+        padding: 24px;
+    }
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+// Botões
+button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+
+    border: 0;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 12px;
+}
+
+.primary-button {
+    background-color: #1098F7;
+    color: #FFF;
+}
+
+.secondary-button {
+    border: 1px solid #B3DDFA;
+    background-color: transparent;
+    color: #1098F7;
+}
+
+.tertiary-button {
+    border: 0;
+}
+
+// Hierarquia Tipográfica
+.tag-section {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 20px;
+    /* 12px */
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    /* 14px */
+    line-height: 22px;
+}
+
+.text-md {
+    font-size: 1rem;
+    /* 16px */
+    line-height: 24px;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    /* 18px */
+    line-height: 26px;
+}
+
+.display-xs {
+    font-size: 1.25rem;
+    line-height: 28px;
+    /* 20px */
+}
+
+.display-sm {
+    font-size: 1.5rem;
+    line-height: 32px;
+    /* 24px */
+}
+
+.display-md {
+    font-size: 1.875rem;
+    /* 30px */
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.display-lg {
+    font-size: 2.25rem;
+    line-height: 44px;
+    /* 36px */
+}
+
+.display-xl {
+    font-size: 3rem;
+    line-height: 60px;
+    /* 48px */
+}
+
+.display-2xl {
+    font-size: 3.5rem;
+    line-height: 68px;
+    /* 56px */
+}
