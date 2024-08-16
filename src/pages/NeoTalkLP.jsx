@@ -12,9 +12,6 @@ import { FiShield } from "react-icons/fi";
 import { FiHeart } from "react-icons/fi";
 import { FiPenTool } from "react-icons/fi";
 
-import { FiInstagram } from "react-icons/fi";
-import { FiLinkedin } from "react-icons/fi";
-
 import "../styles/neotalk-lp.scss"
 
 export function NeoTalkLP() {
