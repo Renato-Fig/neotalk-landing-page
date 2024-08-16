@@ -18,7 +18,7 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 1200px;
-    
+
     padding-top: 164px;
     overflow: hidden;
 
@@ -39,6 +39,13 @@
 
                 @media screen and (max-width: 480px) {
                     flex-direction: column;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                h1 {
+                    line-height: 48px;
+                    font-size: 2.5em;
                 }
             }
         }
@@ -101,6 +108,14 @@
             }
         }
     }
+
+    @media screen and (max-width: 480px) {
+
+        nav,
+        button {
+            display: none;
+        }
+    }
 }
 
 // Estilização da seção Introdução
@@ -155,6 +170,7 @@
         flex-direction: column;
         align-items: center;
 
+
         .text-content {
             h6 {
                 color: #1098F7;
@@ -198,7 +214,15 @@
 
     @media screen and (max-width: 480px) {
         .container {
-            .list-benefits {
+
+            .text-content {
+                h2 {
+                    font-size: 2em;
+                    line-height: 40px;
+                }
+            }
+
+            #list-benefits {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -254,8 +278,18 @@
         }
 
         @media screen and (max-width: 480px) {
+            padding: 24px;
+
+            .text-content {
+                h2 {
+                    font-size: 2em;
+                    line-height: 40px;
+                }
+            }
+
             #list-usage-scenarios {
                 grid-template-columns: 1fr;
+                padding: 24px;
 
                 .item {
                     .image-content {
@@ -295,7 +329,16 @@
                     }
                 }
 
-                @media screen and (max-width: 480px) {
+            }
+
+            @media screen and (max-width: 480px) {
+                h3 {
+                    font-size: 1.75em;
+                    line-height: 32px;
+                }
+
+                .wrapper {
+
                     flex-direction: column;
                 }
             }
