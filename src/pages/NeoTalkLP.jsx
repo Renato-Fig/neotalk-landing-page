@@ -272,7 +272,7 @@ export function NeoTalkLP() {
                     <p className="text-sm">
                         &copy; 2024 NeoCode Solutions. Todos os direitos reservados
                     </p>
-                    <img src={LogoWhite} alt="" />
+                    <img src={ LogoWhite } alt="" />
                     {/* 
                 <nav>
                 <ul>
