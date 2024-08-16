@@ -1,0 +1,400 @@
+// Background-Color das seções
+#navigation,
+#hero,
+#benefits,
+#usage-scenarios {
+    background-color: #F9FAFB;
+}
+
+#cta,
+#links,
+#footer {
+    background-color: #161925;
+}
+
+// Estilização do seção Hero
+#hero {
+    background-image: url('../assets/background.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    
+    padding-top: 164px;
+    overflow: hidden;
+
+    .container {
+        flex-direction: column;
+
+        .text-content {
+            max-width: 792px;
+            align-items: center;
+            text-align: center;
+
+            .wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                @media screen and (max-width: 480px) {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .image-content {
+            height: 350px;
+
+            .inner-box {
+                display: flex;
+
+                img {
+                    width: 312px;
+                    height: auto;
+                    display: flex;
+                }
+
+            }
+        }
+    }
+
+    border-radius: 0 0 48px 48px;
+}
+
+//Estilização do menu de Navegação
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+
+    position: fixed;
+    width: 100%;
+
+    img {
+        height: 40px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            li {
+                padding: 8px 12px;
+
+                a {
+                    padding: 4px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+
+                    &:hover {
+                        color: #1098F7;
+                        border-bottom: 2px solid #1098F7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Estilização da seção Introdução
+#introduction {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        align-items: center;
+
+        .text-content {
+
+            h4,
+            h5,
+            h6 {
+                color: #FFF;
+            }
+
+            p {
+                color: #DBF0FE;
+            }
+        }
+
+        .image-content {
+            padding: 0 48px;
+
+            .image-box {
+                background-color: #161925;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 24px;
+            }
+
+            img {
+                width: 150%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
+
+// Estilização da seção Benefícios
+#benefits {
+    border-radius: 48px 48px 0 0;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+
+        .text-content {
+            h6 {
+                color: #1098F7;
+            }
+
+            max-width: 792px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #list-benefits {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+
+            .item {
+                .icon-box {
+                    background-color: #E2F0FB;
+                    border-radius: 16px;
+                    width: 64px;
+                    height: 64px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 16px;
+
+                    span {
+                        color: "#1098F7";
+                        font-size: 2em;
+                        line-height: 0;
+                    }
+                }
+
+                .text-content {
+                    text-align: left;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .container {
+            .list-benefits {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+}
+
+// Estilização da seção Cenários de Uso
+#usage-scenarios {
+    .container {
+        flex-direction: column;
+        align-items: center;
+
+        .text-content {
+            h6 {
+                color: #1098F7;
+            }
+
+            max-width: 792px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #list-usage-scenarios {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                .image-content {
+                    overflow: hidden;
+                    border-radius: 24px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    aspect-ratio: 1 / 1;
+                    background-color: red;
+                    max-width: 384px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .text-content {
+                    gap: 8px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #list-usage-scenarios {
+                grid-template-columns: 1fr;
+
+                .item {
+                    .image-content {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Estilização da seção de CTA
+#cta {
+    .container {
+        .text-content {
+            max-width: 792px;
+            align-items: center;
+            text-align: center;
+
+            h3,
+            h6 {
+                color: #FFF;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                .secondary-button {
+                    border: 1px solid #8A8C92;
+
+                    a {
+                        color: #FFF;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+#links {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 24px;
+
+        nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+
+                li {
+                    padding: 8px;
+
+                    a {
+                        color: #8A8C92;
+
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+
+        img {
+            height: 40px;
+        }
+
+        p {
+            color: #8A8C92;
+        }
+
+        @media screen and (max-width: 480px) {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+}
+
+#footer {
+    .container {
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        p {
+            color: #8A8C92;
+        }
+
+        img {
+            height: 40px;
+        }
+
+        nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+
+                li {
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #8A8C92;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background-bar {
+    background-color: #161925;
+
+    .inner-curved-box {
+        background-color: #F9FAFB;
+        border-radius: 0 0 48px 48px;
+        height: 48px;
+        width: 100%;
+
+        @media screen and (max-width: 480px) {
+            height: 24px;
+            border-radius: 0 0 24px 24px;
+
+        }
+    }
+
+}

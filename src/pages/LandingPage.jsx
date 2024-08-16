@@ -1,8 +1,7 @@
-import LogoWhite from '../assets/Logo-White.png'
-import LogoColor from '../assets/Logo-Color.png'
 import Mockup from '../assets/Mockup-App-Screen.png'
 import HeroSectionImage from '../assets/Mockup-App-Hero-Section.png'
-import Portrait from '../assets/Portrait-Sign-Language.png'
+
+import { TbAlignRight } from "react-icons/tb";
 
 import "../styles/landing-page.scss"
 
@@ -17,13 +16,15 @@ export function LandingPage() {
                 <nav>
                     <ul>
                         <li><a href="">O que é</a></li>
-                        <li><a href="">Benefícios</a></li>
-                        <li><a href="">Casos de Uso</a></li>
+                        <li><a href="">Vantagens</a></li>
+                        <li><a href="">Contextos de Uso</a></li>
                     </ul>
                 </nav>
 
                 <button className="primary-button">
-                    Teste Agora
+                    <a href="https://neo-talk-angular.vercel.app/chat">
+                        Experimente Agora
+                    </a>
                 </button>
             </header>
 
@@ -31,13 +32,14 @@ export function LandingPage() {
                 <div className="container">
                     <div className="text-content">
                         <h1 className="display-2xl">
-                            Comunicação inclusiva e facilitada com o NeoTalk
+                            <span className="highlight">Comunicação inclusiva</span> e facilitada com o NeoTalk
                         </h1>
                         <p className="display-xs">
                             Transformando a forma como pessoas surdas e ouvintes se comunicam no dia a dia por meio de tecnologia de ponta.
                         </p>
                         <div className="wrapper">
                             <button className="primary-button">
+                                <a href="https://neo-talk-angular.vercel.app/chat"></a>
                                 Experimente Agora
                             </button>
                             <button className="secondary-button">
@@ -51,10 +53,6 @@ export function LandingPage() {
                             <img src={HeroSectionImage} alt="" />
                         </div>
                     </div>
-                </div>
-                <div className="background-circles">
-                    <div className="circle big-circle"></div>
-                    <div className="circle small-circle"></div>
                 </div>
 
             </section>
@@ -76,17 +74,17 @@ export function LandingPage() {
                     <div className="text-content">
                         <div className="item">
                             <h4 className="display-sm">Tradução em Tempo Real</h4>
-                            <p className="text-md">Donec nec cursus metus, nec commodo ligula. Curabitur ultrices eget tellus at egestas.</p>
+                            <p className="text-md">Converta áudio e texto para Libras instantaneamente, levando em conta o contexto e nuances da conversa.</p>
                         </div>
 
                         <div className="item">
                             <h4 className="display-sm">Reconhecimento de Libras</h4>
-                            <p className="text-md">Donec nec cursus metus, nec commodo ligula. Curabitur ultrices eget tellus at egestas.</p>
+                            <p className="text-md">Captura movimentos de Libras através da câmera para uma tradução precisa e natural</p>
                         </div>
 
                         <div className="item">
                             <h4 className="display-sm">Avatar 3D Personalizados</h4>
-                            <p className="text-md">Donec nec cursus metus, nec commodo ligula. Curabitur ultrices eget tellus at egestas.</p>
+                            <p className="text-md">Visualize as traduções de Libras com avatares customizáveis.</p>
                         </div>
                     </div>
                 </div>
@@ -96,41 +94,52 @@ export function LandingPage() {
                 <div className="container">
                     <div className="text-content">
                         <h6 className="text-sm tag-section">Benefícios</h6>
-                        <h2 className="display-lg">O que oferecemos</h2>
-                        <p className="text-md">Donec tempor varius ligula, id consectetur arcu aliquet at. Donec eu elit ac elit rutrum ornare quis in magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <h2 className="display-lg">Vantagens do NeoTalk</h2>
+                        <p className="text-md">Descubra como o NeoTalk pode transformar a maneira como pessoas surdas e ouvintes se comunicam, proporcionando benefícios que fazem a diferença no dia a dia.</p>
                     </div>
 
                     <div className="grid-benefits">
                         <div className="item">
                             <div className="icon">
-                                Icon
+                                <span>
+
+                                    <TbAlignRight />
+                                </span>
+
                             </div>
                             <h5 className="display-xs">Acessibilidade</h5>
-                            <p className="text-sm">Sem ac finibus. Donec nec cursus metus, nec commodo ligula. Curabitur ultrices.</p>
+                            <p className="text-sm">Elimine barreiras de comunicação entre pessoas surdas e ouvintes.</p>
                         </div>
 
                         <div className="item">
                             <div className="icon">
-                                Icon
+                                <span>
+
+                                    <TbAlignRight />
+                                </span>
                             </div>
                             <h5 className="display-xs">Segurança</h5>
-                            <p className="text-sm">Sem ac finibus. Donec nec cursus metus, nec commodo ligula. Curabitur ultrices.</p>
+                            <p className="text-sm">Mantenha a privacidade em interações sensíveis, como consultas médicas.</p>
                         </div>
 
                         <div className="item">
                             <div className="icon">
-                                Icon
+                                <span>
+                                    <TbAlignRight />
+                                </span>
                             </div>
                             <h5 className="display-xs">Facilidade</h5>
-                            <p className="text-sm">Sem ac finibus. Donec nec cursus metus, nec commodo ligula. Curabitur ultrices.</p>
+                            <p className="text-sm">Interface intuitiva e fácil de usar que se adapta às necessidades do usuário</p>
                         </div>
 
                         <div className="item">
                             <div className="icon">
-                                Icon
+                                <span>
+                                    <TbAlignRight />
+                                </span>
                             </div>
-                            <h5 className="display-xs">Benefício</h5>
-                            <p className="text-sm">Sem ac finibus. Donec nec cursus metus, nec commodo ligula. Curabitur ultrices.</p>
+                            <h5 className="display-xs">Personalização</h5>
+                            <p className="text-sm">Experiência personalizada com avatares 3D, adaptando-se ao estilo individual do usuário.</p>
                         </div>
                     </div>
                 </div>
@@ -140,9 +149,9 @@ export function LandingPage() {
                 <div className="container">
 
                     <div className="text-content">
-                        <h6 className="text-sm tag-section">Casos de Uso</h6>
+                        <h6 className="text-sm tag-section">Contextos de Uso</h6>
                         <h2 className="display-xl">
-                            Eget tellus at egestas. Duis sed ex lacus pellentesque habitant.
+                            Uma solução versátil que pode ser aplicada em <span className="highlight">diversos contextos</span>
                         </h2>
                     </div>
 
@@ -192,10 +201,14 @@ export function LandingPage() {
                         <h2 className="display-lg">Rompa as barreiras da comunicação com o NeoTalk</h2>
                         <div className="wrapper">
                             <button className="primary-button">
-                                Experimente Agora
+                                <a href="https://neo-talk-angular.vercel.app/chat">
+                                    Experimente Agora
+                                </a>
                             </button>
                             <button className="secondary-button">
-                                Fale Conosco
+                                <a href="">
+                                    Fale Conosco
+                                </a>
                             </button>
                         </div>
                     </div>

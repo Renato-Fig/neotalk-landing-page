@@ -31,7 +31,7 @@ section {
         align-items: center;
         gap: 48px;
     }
-    
+
     @media screen and (max-width: 480px) {
         padding: 24px;
     }
@@ -57,17 +57,36 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 12px;
+    
+}
+
+.highlight {
+    color: #1098F7;
 }
 
 .primary-button {
     background-color: #1098F7;
-    color: #FFF;
+
+    a {
+        color: #FFF;
+    }
+
+    &:hover {
+        background-color: #1380CB;
+    }
 }
 
 .secondary-button {
     border: 1px solid #B3DDFA;
     background-color: transparent;
-    color: #1098F7;
+
+    a {
+        color: #1098F7;
+    }
+
+    &:hover {
+        background-color: rgba($color: #1380CB, $alpha: 0.05);
+    }
 }
 
 .tertiary-button {
@@ -106,18 +125,21 @@ button {
 }
 
 .display-xs {
+    // h6
     font-size: 1.25rem;
     line-height: 28px;
     /* 20px */
 }
 
 .display-sm {
+    // h5
     font-size: 1.5rem;
     line-height: 32px;
     /* 24px */
 }
 
 .display-md {
+    // h4
     font-size: 1.875rem;
     /* 30px */
     line-height: 38px;
@@ -125,18 +147,21 @@ button {
 }
 
 .display-lg {
+    // h3
     font-size: 2.25rem;
     line-height: 44px;
     /* 36px */
 }
 
 .display-xl {
+    // h2
     font-size: 3rem;
     line-height: 60px;
     /* 48px */
 }
 
 .display-2xl {
+    // h1
     font-size: 3.5rem;
     line-height: 68px;
     /* 56px */
