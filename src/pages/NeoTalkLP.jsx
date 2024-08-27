@@ -30,6 +30,9 @@ export function NeoTalkLP() {
                         <li>
                             <a href="#usage-scenarios">Cenários de Uso</a>
                         </li>
+                        <li>
+                            <a href="/entrevistas">Entrevistas</a>
+                        </li>
                     </ul>
                 </nav>
                 <button className="primary-button">
@@ -71,7 +74,7 @@ export function NeoTalkLP() {
                         <h4 className="display-md">
                             NeoTalk traduz áudio e texto para Libras, assim como o inverso, de Libras para áudio e texto.
                         </h4>
-                        <p className="text-md">
+                        <p className="text-lg">
                             Oferecemos traduções precisas e contextualizadas,indo além da simples correspondência palavra por palavra, capturando nuances e contextos da Libras.
                         </p>
                     </div>
@@ -85,7 +88,7 @@ export function NeoTalkLP() {
                             <h5 className="display-sm">
                                 Tradução em Tempo Real
                             </h5>
-                            <p className="text-md">
+                            <p className="text-lg">
                                 Converta áudio e texto para Libras instantaneamente, levando em conta o contexto e nuances da conversa.
                             </p>
                         </div>
@@ -101,7 +104,7 @@ export function NeoTalkLP() {
                             <h5 className="display-sm">
                                 Avatar 3D Personalizados
                             </h5>
-                            <p className="text-md">
+                            <p className="text-lg">
                                 Visualize as traduções de Libras com avatares customizáveis.
                             </p>
                         </div>
@@ -117,7 +120,7 @@ export function NeoTalkLP() {
                         <h2 className="display-xl">
                             Vantagens do NeoTalk
                         </h2>
-                        <p className="text-md">
+                        <p className="text-lg">
                             Descubra como o NeoTalk pode transformar a maneira como pessoas surdas e ouvintes se comunicam, proporcionando benefícios que fazem a diferença no dia a dia.
                         </p>
                     </div>
@@ -132,7 +135,7 @@ export function NeoTalkLP() {
                                 <h6 className="display-xs">
                                     Acessibilidade
                                 </h6>
-                                <p className="text-sm">
+                                <p className="text-md">
                                     Elimine barreiras de comunicação entre pessoas surdas e ouvintes.
                                 </p>
                             </div>
@@ -147,7 +150,7 @@ export function NeoTalkLP() {
                                 <h6 className="display-xs">
                                     Segurança
                                 </h6>
-                                <p className="text-sm">
+                                <p className="text-md">
                                     Mantenha a privacidade em interações sensíveis, como consultas médicas.
                                 </p>
                             </div>
@@ -162,7 +165,7 @@ export function NeoTalkLP() {
                                 <h6 className="display-xs">
                                     Facilidade
                                 </h6>
-                                <p className="text-sm">
+                                <p className="text-md">
                                     Interface intuitiva e fácil de usar que se adapta às necessidades do usuário.
                                 </p>
                             </div>
@@ -177,7 +180,7 @@ export function NeoTalkLP() {
                                 <h6 className="display-xs">
                                     Personalização
                                 </h6>
-                                <p className="text-sm">
+                                <p className="text-md">
                                     Experiência personalizada com avatares 3D, adaptando-se ao estilo individual do usuário.
                                 </p>
                             </div>
