@@ -28,21 +28,21 @@
             
             .item {
                 &:nth-child(1) {
-                    background-image: url("../assets/usage-scenario-1.png");
+                    background-image: url("../assets/interview-thumbnail-1.png");
                 }
                 &:nth-child(2) {
-                    background-image: url("../assets/usage-scenario-2.png");
+                    background-image: url("../assets/interview-thumbnail-2.png");
                 }
                 &:nth-child(3) {
-                    background-image: url("../assets/usage-scenario-3.png");
+                    background-image: url("../assets/interview-thumbnail-3.png");
                 }
                 width: 100%;
-                aspect-ratio: 4 / 3;
+                aspect-ratio: 16 / 9;
                 border-radius: 16px;
                 display: flex;
                 flex-direction: column;
-                justify-content: end;
                 align-items: center;
+                justify-content: center;
                 text-align: center;
                 
                 background-size: cover;
@@ -55,9 +55,11 @@
                 }
 
                 .text-content {
-                    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);;
-                    
+                    //background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);;
+                    background-color: rgba($color: #000000, $alpha: 0.5);
                     padding: 24px;
+                    height: 100%;
+                    justify-content: center;
                     p {
 
                         color: #F9FAFB;

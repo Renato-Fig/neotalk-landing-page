@@ -11,9 +11,9 @@ export function Interviews() {
     const [selectedVideo, setSelectedVideo] = useState(null);
 
     const interviews = [
-        { id: 1, title: "Jornal Band Cidade - TV Band", videoUrl: "https://www.youtube.com/embed/u31qwQUeGuM?si=ZOAaxNoT51E-wQff" },
-        { id: 2, title: "Jornal Cidade - TV Record", videoUrl: "https://www.youtube.com/embed/u31qwQUeGuM?si=ZOAaxNoT51E-wQff" },
-        { id: 3, title: "Conexão News - JP News Floripa", videoUrl: "https://www.youtube.com/embed/u31qwQUeGuM?si=ZOAaxNoT51E-wQff" }
+        { id: 1, title: "Jornal Band Cidade - TV Band", videoUrl: "https://www.youtube.com/embed/kgkQdePJn_s?si=ozzZYsXkHl2IQ05l" },
+        { id: 2, title: "Jornal Cidade - TV Record", videoUrl: "https://www.youtube.com/embed/7WMW8BHsBAI?si=h42rsywujDgPCht4" },
+        { id: 3, title: "Conexão News - Joven Pan News", videoUrl: "https://www.youtube.com/embed/0NzuronrP9o?si=Aq730Zl-oHsmwAt7" }
     ];
 
     const openModal = (videoUrl) => {
@@ -36,6 +36,7 @@ export function Interviews() {
                     <div className="list-interviews">
                         {interviews.map(interview => (
                             <div key={interview.id} className="item" onClick={() => openModal(interview.videoUrl)}>
+                                
                                 <div className="text-content">
                                     <p className="text-lg">{interview.title}</p>
                                 </div>
